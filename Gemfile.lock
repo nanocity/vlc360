@@ -1,0 +1,105 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    builder (3.2.3)
+    byebug (11.1.1)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    facets (3.1.0)
+    faraday (0.12.2)
+      multipart-post (>= 1.2, < 3)
+    git (1.3.0)
+    github_api (0.18.2)
+      addressable (~> 2.4)
+      descendants_tracker (~> 0.0.4)
+      faraday (~> 0.8)
+      hashie (~> 3.5, >= 3.5.2)
+      oauth2 (~> 1.0)
+    hashdiff (0.3.7)
+    hashie (3.5.7)
+    highline (1.7.10)
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
+    json (1.8.6)
+    juwelier (2.4.9)
+      builder
+      bundler
+      git
+      github_api
+      highline
+      kamelcase (~> 0)
+      nokogiri
+      psych
+      rake
+      rdoc
+      semver2
+    jwt (1.5.6)
+    kamelcase (0.0.2)
+      semver2 (~> 3)
+    mini_portile2 (2.3.0)
+    multi_json (1.13.1)
+    multi_xml (0.6.0)
+    multipart-post (2.0.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    oauth2 (1.4.0)
+      faraday (>= 0.8, < 0.13)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+    psych (3.0.2)
+    public_suffix (3.0.1)
+    rack (2.0.4)
+    rake (12.3.0)
+    rdoc (3.12.2)
+      json (~> 1.4)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    safe_yaml (1.0.4)
+    semver2 (3.4.2)
+    simplecov (0.15.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    thread_safe (0.3.6)
+    webmock (3.3.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.0)
+  byebug
+  facets
+  hashie
+  httparty
+  juwelier (~> 2.4.9)
+  rdoc (~> 3.12)
+  rspec (~> 3.5.0)
+  simplecov
+  webmock
+
+BUNDLED WITH
+   1.16.1
