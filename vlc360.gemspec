@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Luis Ciudad".freeze]
-  s.date = "2018-02-12"
+  s.date = "2020-03-05"
   s.description = "longer description of your gem".freeze
   s.email = "lciugar@gmail.com".freeze
   s.extra_rdoc_files = [
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".byebug_history",
     ".document",
     ".rspec",
     "Gemfile",
@@ -27,38 +28,23 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "vlc360.gemspec",
     "lib/vlc360.rb",
-    "lib/vlc360/api_operations/find.rb",
-    "lib/vlc360/api_operations/list.rb",
     "lib/vlc360/api_operations/save.rb",
-    "lib/vlc360/api_operations/search.rb",
-    "lib/vlc360/api_operations/translate.rb",
-    "lib/vlc360/api_operations/validate.rb",
     "lib/vlc360/api_resource.rb",
     "lib/vlc360/client.rb",
-    "lib/vlc360/experience.rb",
-    "lib/vlc360/experience_not_found.rb",
-    "lib/vlc360/image.rb",
+    "lib/vlc360/injured.rb",
     "lib/vlc360/resource.rb",
-    "lib/vlc360/validation.rb",
+    "lib/vlc360/session.rb",
     "lib/vlc360/version.rb",
-    "spec/api/find_spec.rb",
-    "spec/api/list_spec.rb",
+    "lib/vlc360/work.rb",
     "spec/api/save_spec.rb",
-    "spec/api/search_spec.rb",
-    "spec/api/translate_spec.rb",
-    "spec/api/validate_spec.rb",
-    "spec/resources/experience_spec.rb",
-    "spec/resources/image_spec.rb",
-    "spec/resources/resource_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/stubbed_responses.rb",
-    "spec/support/stubbed_responses.yml"
+    "vlc360.gemspec"
   ]
   s.homepage = "http://github.com/nanocity/vlc360".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.14".freeze
+  s.rubygems_version = "2.7.3".freeze
   s.summary = "VLC360 Ruby API Client".freeze
 
   if s.respond_to? :specification_version then
@@ -68,6 +54,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<httparty>.freeze, [">= 0"])
       s.add_runtime_dependency(%q<facets>.freeze, [">= 0"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.0"])
+      s.add_development_dependency(%q<byebug>.freeze, [">= 0"])
       s.add_development_dependency(%q<hashie>.freeze, [">= 0"])
       s.add_development_dependency(%q<juwelier>.freeze, ["~> 2.4.9"])
       s.add_development_dependency(%q<rspec>.freeze, ["~> 3.5.0"])
@@ -78,6 +65,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<httparty>.freeze, [">= 0"])
       s.add_dependency(%q<facets>.freeze, [">= 0"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<byebug>.freeze, [">= 0"])
       s.add_dependency(%q<hashie>.freeze, [">= 0"])
       s.add_dependency(%q<juwelier>.freeze, ["~> 2.4.9"])
       s.add_dependency(%q<rspec>.freeze, ["~> 3.5.0"])
@@ -89,6 +77,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<httparty>.freeze, [">= 0"])
     s.add_dependency(%q<facets>.freeze, [">= 0"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
+    s.add_dependency(%q<byebug>.freeze, [">= 0"])
     s.add_dependency(%q<hashie>.freeze, [">= 0"])
     s.add_dependency(%q<juwelier>.freeze, ["~> 2.4.9"])
     s.add_dependency(%q<rspec>.freeze, ["~> 3.5.0"])

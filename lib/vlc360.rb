@@ -10,12 +10,7 @@ end
 
 require 'vlc360/client'
 
-require 'vlc360/api_operations/list'
-require 'vlc360/api_operations/find'
-require 'vlc360/api_operations/search'
 require 'vlc360/api_operations/save'
-require 'vlc360/api_operations/translate'
-require 'vlc360/api_operations/validate'
 
 require 'vlc360/resource'
 require 'vlc360/api_resource'

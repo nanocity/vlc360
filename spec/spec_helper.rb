@@ -20,7 +20,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rspec'
 require 'webmock/rspec'
 require 'hashie'
-require 'experiences_spain'
+require 'vlc360'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
@@ -36,6 +36,6 @@ RSpec.configure do |config|
   end
 
   config.before :suite do
-    ExperiencesSpain.auth_token = 'SomeAuthToken'
+    VLC360.token_session = 'SomeAuthToken'
   end
 end

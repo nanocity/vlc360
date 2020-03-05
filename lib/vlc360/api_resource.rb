@@ -9,10 +9,7 @@ module VLC360
       return true if (200..299) === response.code
 
       @errors << response.parsed_response['error']
-      @warnings << response.parsed_response['warning']
-
       @errors.compact!
-      @warnings.compact!
 
       return false
     end

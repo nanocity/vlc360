@@ -23,7 +23,7 @@ module VLC360
       end
     end
 
-    attr_reader :errors, :warnings
+    attr_reader :errors
 
     def initialize(attributes = {})
       clear_errors
@@ -48,7 +48,7 @@ module VLC360
 
     def to_hash
       hashie = Hash[self.class.attributes.map { |attribute| [attribute, send(attribute)] }]
-      hashie[self.class.nested_resource] = send(self.class.nested_resource).to_hash if self.class.nested_resource
+      hashie[self.class.nested_resource] = send(self.class.nested_resource)&.to_hash if self.class.nested_resource
 
       self.class.nested_resources.map do |resources|
         hashie[resources] = send(resources)&.map(&:to_hash)
@@ -61,7 +61,6 @@ module VLC360
 
     def clear_errors
       @errors = []
-      @warnings = []
     end
   end
 end
