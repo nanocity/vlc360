@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".byebug_history",
     ".document",
     ".rspec",
     "Gemfile",
@@ -38,8 +37,11 @@ Gem::Specification.new do |s|
     "lib/vlc360/version.rb",
     "lib/vlc360/work.rb",
     "spec/api/save_spec.rb",
+    "spec/resources/resource_spec.rb",
+    "spec/resources/work_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/stubbed_responses.rb",
+    "spec/support/stubbed_responses.yml",
     "vlc360.gemspec"
   ]
   s.homepage = "http://github.com/nanocity/vlc360".freeze
